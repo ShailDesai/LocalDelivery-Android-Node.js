@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registration">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+
+            <TextView android:id="@+id/email"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:inputType="text"
+                android:layout_alignParentBottom="true"
+                android:hint="@string/enter_email_id"
+                android:textColorHint="@color/primecolour"
+                android:background="@drawable/edittextstyle"
+                android:textSize="18sp"
+                />
+
+            <TextView android:id="@+id/username"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:inputType="text"
+                android:layout_alignParentBottom="true"
+                android:hint="@string/user_name"
+                android:textColorHint="@color/primecolour"
+                android:background="@drawable/edittextstyle"
+                android:textSize="18sp"
+                />
+
+
+            <EditText android:id="@+id/firstname"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:hint="@string/first_name_prompt"
+                android:textColorHint="@color/primecolour"
+                android:inputType="text"
+                android:background="@drawable/edittextstyle" />
+
+            <EditText android:id="@+id/lastname"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:hint="@string/last_name_prompt"
+                android:textColorHint="@color/primecolour"
+                android:inputType="text"
+                android:background="@drawable/edittextstyle" />
+
+            <EditText android:id="@+id/phonenumber"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:hint="@string/phone_number_prompt"
+                android:digits="0123456789\n"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:textColorHint="@color/primecolour"
+                android:inputType="phone"
+                android:background="@drawable/edittextstyle" />
+
+            <EditText android:id="@+id/birthyear"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:hint="@string/birth_year_prompt"
+                android:textColorHint="@color/primecolour"
+                android:inputType="phone"
+                android:digits="0123456789"
+                android:background="@drawable/edittextstyle" />
+
+
+
+            <Spinner
+                android:id="@+id/gender"
+                android:style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:hint="@string/gender_prompt"
+                android:textColorHint="@color/primecolour"
+                android:inputType="phone"
+                android:drawSelectorOnTop="true"
+                android:theme="@style/Spinner"
+                android:entries="@array/Gender"
+                android:background="@drawable/edittextstyle"
+                tools:ignore="DuplicateIds"
+                android:textSize="18sp"
+                />
+
+
+            <EditText android:id="@+id/password"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:hint="@string/password"
+                android:textColorHint="@color/primecolour"
+                android:inputType="phone"
+                android:digits="0123456789"
+                android:background="@drawable/edittextstyle" />
+
+
+
+            <EditText android:id="@+id/confirmpassword"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:hint="@string/confirm_password"
+                android:textColorHint="@color/primecolour"
+                android:inputType="phone"
+                android:digits="0123456789"
+                android:background="@drawable/edittextstyle" />
+
+
+
+            <Button android:id="@+id/register"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="@string/register_customer_button"
+                android:layout_alignParentBottom="true"
+                android:background="@color/primecolour"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
